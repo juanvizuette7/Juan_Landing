@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Agencia de Turismo Juan</title>
+    <style>
+        :root { --primary: #1a6fb0; --secondary: #ff6b35; --accent: #2ecc71; --dark: #2c3e50; --light: #ecf0f1; --gradient: linear-gradient(135deg, #1a6fb0, #6a11cb); }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background-color: #f8f9fa; color: #333; line-height: 1.6; }
+        nav { background: var(--gradient); padding: 1rem 2rem; text-align: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+        nav a { color: white; text-decoration: none; margin: 0 20px; font-weight: 600; font-size: 1.1rem; transition: all 0.3s ease; padding: 8px 16px; border-radius: 25px; }
+        nav a:hover { color: #ffd700; background: rgba(255,255,255,0.1); transform: translateY(-2px); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        footer { background: var(--dark); color: white; text-align: center; padding: 2rem; margin-top: 4rem; }
+        .social-links { margin: 1rem 0; }
+        .social-links a { color: white; margin: 0 10px; font-size: 1.5rem; transition: color 0.3s ease; }
+        .social-links a:hover { color: var(--secondary); }
+        
+        /* Estilos específicos para servicios */
+        .titulo-seccion { text-align: center; margin: 3rem 0; }
+        .titulo-seccion h1 { color: var(--primary); font-size: 2.8rem; margin-bottom: 1rem; }
+        .titulo-seccion p { font-size: 1.3rem; color: #666; max-width: 600px; margin: 0 auto; }
+        
+        .servicios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; margin: 3rem 0; }
+        .servicio-card { background: white; padding: 2.5rem; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease; border-top: 5px solid var(--primary); }
+        .servicio-card:hover { transform: translateY(-8px); }
+        .servicio-card h3 { color: var(--primary); margin-bottom: 1.5rem; font-size: 1.6rem; }
+        .servicio-card ul { list-style: none; margin: 1.5rem 0; }
+        .servicio-card li { margin: 0.8rem 0; padding-left: 1.5rem; position: relative; }
+        .servicio-card li:before { content: "✓"; color: var(--accent); font-weight: bold; position: absolute; left: 0; }
+        .precio { font-weight: bold; color: var(--secondary); font-size: 1.8rem; margin-top: 1.5rem; text-align: center; }
+        .servicio-icon { font-size: 3rem; color: var(--primary); margin-bottom: 1rem; text-align: center; }
+        
+        .recomendado { border-top: 5px solid var(--secondary); position: relative; }
+        .recomendado::after { content: "MÁS POPULAR"; position: absolute; top: -12px; right: 20px; background: var(--secondary); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/">Inicio</a>
+        <a href="/lugares/">Lugares Turísticos</a>
+        <a href="/servicios/">Servicios</a>
+        <a href="/contacto/">Contacto</a>
+    </nav>
+
+    <div class="container">
+        <div class="titulo-seccion">
+            <h1>Nuestros Paquetes Turísticos</h1>
+            <p>Experiencias diseñadas para todos los gustos y presupuestos</p>
+        </div>
+        
+        <div class="servicios-grid">
+            <div class="servicio-card">
+                <div class="servicio-icon">🌟</div>
+                <h3>Paquete Esencial</h3>
+                <p>Perfecto para viajeros que buscan lo básico con calidad:</p>
+                <ul>
+                    <li>Alojamiento en hoteles 3 estrellas</li>
+                    <li>Desayuno incluido diario</li>
+                    <li>Traslados aeropuerto-hotel-aeropuerto</li>
+                    <li>Asistencia telefónica 24/7</li>
+                    <li>Mapa turístico y recomendaciones</li>
+                </ul>
+                <div class="precio">$850.000 COP</div>
+            </div>
+            
+            <div class="servicio-card recomendado">
+                <div class="servicio-icon">✨</div>
+                <h3>Paquete Premium</h3>
+                <p>Experiencia completa con todos los lujos:</p>
+                <ul>
+                    <li>Alojamiento en hoteles 4-5 estrellas</li>
+                    <li>Alimentación completa (desayuno, almuerzo, cena)</li>
+                    <li>Tours guiados exclusivos</li>
+                    <li>Transporte privado</li>
+                    <li>Seguro de viaje premium</li>
+                    <li>Actividades experienciales incluidas</li>
+                    <li>Guía personalizado bilingüe</li>
+                </ul>
+                <div class="precio">$1.850.000 COP</div>
+            </div>
+            
+            <div class="servicio-card">
+                <div class="servicio-icon">🎯</div>
+                <h3>Paquete Personalizado</h3>
+                <p>Diseñamos tu viaje ideal según tus preferencias:</p>
+                <ul>
+                    <li>Itinerario 100% personalizado</li>
+                    <li>Elección de destinos y actividades</li>
+                    <li>Presupuesto flexible</li>
+                    <li>Asesoramiento experto sin costo</li>
+                    <li>Experiencias únicas y exclusivas</li>
+                    <li>Coordinación de todos los detalles</li>
+                </ul>
+                <div class="precio">Consultar precio</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Agencia de Turismo Juan © 2025 - Tu aventura comienza aquí</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/juanfajaardo/#" target="_blank">📷</a>
+            <a href="#">📘</a>
+            <a href="#">🐦</a>
+        </div>
+    </footer>
+</body>
+</html>

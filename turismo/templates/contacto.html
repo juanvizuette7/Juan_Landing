@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Agencia de Turismo Juan</title>
+    <style>
+        :root { --primary: #1a6fb0; --secondary: #ff6b35; --accent: #2ecc71; --dark: #2c3e50; --light: #ecf0f1; --gradient: linear-gradient(135deg, #1a6fb0, #6a11cb); }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background-color: #f8f9fa; color: #333; line-height: 1.6; }
+        nav { background: var(--gradient); padding: 1rem 2rem; text-align: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+        nav a { color: white; text-decoration: none; margin: 0 20px; font-weight: 600; font-size: 1.1rem; transition: all 0.3s ease; padding: 8px 16px; border-radius: 25px; }
+        nav a:hover { color: #ffd700; background: rgba(255,255,255,0.1); transform: translateY(-2px); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        footer { background: var(--dark); color: white; text-align: center; padding: 2rem; margin-top: 4rem; }
+        .social-links { margin: 1rem 0; }
+        .social-links a { color: white; margin: 0 10px; font-size: 1.5rem; transition: color 0.3s ease; }
+        .social-links a:hover { color: var(--secondary); }
+        
+        /* Estilos específicos para contacto */
+        .titulo-seccion { text-align: center; margin: 3rem 0; }
+        .titulo-seccion h1 { color: var(--primary); font-size: 2.8rem; margin-bottom: 1rem; }
+        .titulo-seccion p { font-size: 1.3rem; color: #666; max-width: 600px; margin: 0 auto; }
+        
+        .contacto-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; margin: 3rem 0; }
+        .contacto-card { background: white; padding: 2.5rem; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center; }
+        .contacto-icon { font-size: 3rem; color: var(--primary); margin-bottom: 1.5rem; }
+        .contacto-card h3 { color: var(--primary); margin-bottom: 1rem; font-size: 1.5rem; }
+        .contacto-info { color: #555; font-size: 1.1rem; }
+        .contacto-link { color: var(--secondary); text-decoration: none; transition: color 0.3s ease; }
+        .contacto-link:hover { color: var(--primary); text-decoration: underline; }
+        
+        .horario { background: var(--light); padding: 2rem; border-radius: 10px; margin: 2rem 0; }
+        .horario h3 { color: var(--primary); margin-bottom: 1rem; }
+        
+        .whatsapp-btn { background: #25D366; color: white; padding: 15px 25px; border-radius: 50px; text-decoration: none; display: inline-block; margin-top: 1rem; font-weight: 600; transition: all 0.3s ease; }
+        .whatsapp-btn:hover { background: #128C7E; transform: translateY(-2px); }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/">Inicio</a>
+        <a href="/lugares/">Lugares Turísticos</a>
+        <a href="/servicios/">Servicios</a>
+        <a href="/contacto/">Contacto</a>
+    </nav>
+
+    <div class="container">
+        <div class="titulo-seccion">
+            <h1>Contáctanos</h1>
+            <p>Estamos aquí para hacer realidad tu próximo viaje soñado</p>
+        </div>
+        
+        <div class="contacto-grid">
+            <div class="contacto-card">
+                <div class="contacto-icon">📧</div>
+                <h3>Correo Electrónico</h3>
+                <p class="contacto-info">
+                    <a href="mailto:juan.vizuette@outlook.com" class="contacto-link">juan.vizuette@outlook.com</a>
+                </p>
+                <p>Respuesta en menos de 24 horas</p>
+            </div>
+            
+            <div class="contacto-card">
+                <div class="contacto-icon">📞</div>
+                <h3>Teléfono / WhatsApp</h3>
+                <p class="contacto-info">
+                    <a href="https://wa.me/573177875970" class="contacto-link">+57 317 787 5970</a>
+                </p>
+                <a href="https://wa.me/573177875970" class="whatsapp-btn">💬 Escribir por WhatsApp</a>
+            </div>
+            
+            <div class="contacto-card">
+                <div class="contacto-icon">🏢</div>
+                <h3>Dirección</h3>
+                <p class="contacto-info">Calle 11 #Unicentro<br>Medellín, Colombia</p>
+                <p>Visítanos previa cita</p>
+            </div>
+            
+            <div class="contacto-card">
+                <div class="contacto-icon">🌐</div>
+                <h3>Redes Sociales</h3>
+                <p class="contacto-info">
+                    Síguenos para inspiración viajera
+                </p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/juanfajaardo/#" target="_blank">📷 Instagram</a><br>
+                    <a href="#">📘 Facebook</a><br>
+                    <a href="#">🐦 Twitter</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="horario">
+            <h3>🕒 Horario de Atención</h3>
+            <p><strong>Lunes a Viernes:</strong> 8:00 AM - 6:00 PM</p>
+            <p><strong>Sábados:</strong> 9:00 AM - 2:00 PM</p>
+            <p><strong>Domingos:</strong> Cerrado (atención por WhatsApp)</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Agencia de Turismo Juan © 2025 - Tu puerta a Colombia</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/juanfajaardo/#" target="_blank">📷</a>
+            <a href="#">📘</a>
+            <a href="#">🐦</a>
+        </div>
+    </footer>
+</body>
+</html>
